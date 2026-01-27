@@ -1,0 +1,9 @@
+.about-page {
+  padding: 50px;
+  background: linear-gradient(135deg, #f3e8ff, #fff6fb);
+  min-height: 100vh;
+}
+
+.about-page h1 {
+  color: #4b0f2e;
+}

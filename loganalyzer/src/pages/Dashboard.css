@@ -1,0 +1,32 @@
+.dashboard {
+  padding: 40px;
+  background: #fff6fb;
+  min-height: 100vh;
+}
+
+.dashboard h1 {
+  color: #4b0f2e;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #6d597a;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #9d4edd;
+}

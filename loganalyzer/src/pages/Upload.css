@@ -1,0 +1,29 @@
+.upload-page {
+  padding: 50px;
+  background: linear-gradient(120deg, #fff6fb, #f3e8ff);
+  min-height: 100vh;
+}
+
+.upload-page h1 {
+  color: #4b0f2e;
+}
+
+.upload-box {
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.upload-box button {
+  margin-top: 15px;
+  width: 100%;
+  background: #4b0f2e;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}

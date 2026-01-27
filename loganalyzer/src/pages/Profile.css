@@ -1,0 +1,17 @@
+.profile-page {
+  padding: 50px;
+  background: #fff6fb;
+  min-height: 100vh;
+}
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.profile-card strong {
+  color: #4b0f2e;
+}

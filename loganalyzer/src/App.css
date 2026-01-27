@@ -1,0 +1,43 @@
+/* src/App.css */
+:root {
+  --main-color: #800000; /* Dark Maroon */
+  --light-color: #f9f5f5;
+  --accent-color: #ff6666;
+  --text-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f0f0;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container {
+  flex: 1;
+  padding: 20px;
+}
+.navbar {
+  background: linear-gradient(135deg, #2b0f3a, #4b145f);
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.navbar button {
+  background: #e0aaff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
