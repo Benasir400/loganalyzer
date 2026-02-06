@@ -13,17 +13,22 @@ export default function Login() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await apiLogin(form);
-      login(res.data.token); // Save JWT in context
-      alert('Login success 🚀');
-      navigate('/dashboard');
-    } catch (err) {
-      alert('Invalid email or password ❌');
-    }
-  };
+ const handleLogin = async (e) => {
+  e.preventDefault();
+  try {
+    const res = await apiLogin(form);
+
+    // ✅ STORE EMAIL
+    localStorage.setItem("email", res.data.email);
+
+    login("logged"); // just flag auth
+    alert('Login success 🚀');
+    navigate('/dashboard');
+  } catch (err) {
+    alert('Invalid email or password ❌');
+  }
+};
+
 
   return (
     <div className="login-wrap">
