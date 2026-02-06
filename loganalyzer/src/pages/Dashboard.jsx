@@ -58,16 +58,26 @@ const pieData = {
   ]
 };
 const handleDownload = async () => {
-  const email = localStorage.getItem("email");
-  const res = await exportReport(email);
+  try {
+    const response = await exportReport();
 
-  const url = window.URL.createObjectURL(new Blob([res.data]));
-  const link = document.createElement("a");
-  link.href = url;
-  link.setAttribute("download", "log_report.csv");
-  document.body.appendChild(link);
-  link.click();
+    const url = window.URL.createObjectURL(
+      new Blob([response.data])
+    );
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", "error_report.csv");
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+  } catch (error) {
+    console.error("Download failed:", error);
+    alert("Failed to download report");
+  }
 };
+
 
 
 

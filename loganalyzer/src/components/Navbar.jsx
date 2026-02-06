@@ -13,6 +13,7 @@ export default function Navbar() {
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/upload">Upload</Link>
         <Link to="/about">About</Link>
+       
         <button onClick={() => {
           localStorage.clear();
           logout();

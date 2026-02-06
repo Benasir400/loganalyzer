@@ -33,10 +33,14 @@ export const uploadLog = (file, email) => {
 export const getLogs = (email) => {
   return API.get(`/logs/${email}`);
 };
-export const exportReport = (email) => {
-  return API.get(`/logs/export/${email}`, {
-    responseType: "blob"
-  });
+
+export const exportReport = async () => {
+  return axios.get(
+    "http://localhost:8080/api/logs/export",
+    {
+      responseType: "blob"   // 👈 REQUIRED
+    }
+  );
 };
 
 
